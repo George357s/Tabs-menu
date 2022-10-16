@@ -1,0 +1,90 @@
+body {
+   padding: 2.5em;
+   font-family: sans-serif;
+   background: rgb(43, 101, 177);
+   display: flex;
+   justify-content: center;
+}
+
+* {
+   margin: 0;
+   box-sizing: border-box;
+}
+
+h1 {
+   margin: 0 0 0.5em 0;
+}
+
+p {
+   margin: 1em 0;
+   color: #7c7c7c;
+   line-height: 25px;
+}
+
+.tab-menu {
+   max-width: 700px;
+}
+
+.tabs {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.tab {
+   border: none;
+   font-size: 1em;
+   padding: 0.7em 2em;
+   background: #efefef;
+   transition: 0.7s;
+   cursor: pointer;
+   border-radius: 0;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.tab:not(.active):hover {
+   background: #dfdede;
+}
+
+.active {
+   background: #fff;
+}
+
+.content {
+   background: #fff;
+   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+   position: relative;
+   width: 100%;
+   border-radius: 0 8px 8px 8px;
+   overflow: hidden;
+}
+
+.content-container {
+   height: 25em;
+   overflow-y: scroll;
+}
+
+.content-container::-webkit-scrollbar {
+   width: 8px;
+}
+
+.content-container::-webkit-scrollbar-track {
+   background: #f1f1f1;
+}
+
+.content-container::-webkit-scrollbar-thumb {
+   background: #ccc;
+}
+
+.content-container::-webkit-scrollbar-thumb:hover {
+   background: #c4c4c4;
+}
+
+.content img {
+   width: 10em;
+   margin-right: 0.5em;
+}
+
+.panel {
+   padding: 1.5em;
+}
